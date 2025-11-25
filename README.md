@@ -49,7 +49,7 @@ cd your-project
 ```
 2. Build and start containers:
 ```bash
-docker-compose up --build
+docker-compose up --build -d
 ```
 3. Access the app:
 
