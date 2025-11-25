@@ -25,7 +25,7 @@ async function sendText() {
 <template>
   <div>
     <h1>Basic text echo app</h1>
-    <p>This app run on Linux with Docker</p>
+    <p>This is basic text echo app using vue.js(vite) + node.js (hono)</p>
   </div>
   <div style="display: flex; flex-direction: column; gap: 12px;">
     <textarea
