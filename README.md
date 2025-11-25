@@ -53,7 +53,7 @@ docker-compose up --build
 ```
 3. Access the app:
 
-Frontend: http://localhost:8080
+Frontend: http://localhost:80
 
 Backend: http://localhost:3000
 
