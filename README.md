@@ -20,11 +20,17 @@ A simple full-stack app I built to learn **Docker, Vue.js, Hono (Node.js)**, and
 ## Folder Structure
 
 your-project/
+
 ├─ src/
+
 │ ├─ frontend/ # Vue.js app
+
 │ └─ backend/ # Hono + Node.js app
+
 ├─ .gitignore
+
 ├─ docker-compose.yml
+
 ├─ README.md
 
 ---
@@ -38,16 +44,18 @@ your-project/
 ### Run with Docker
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/your-project.git
-cd your-project
+git clone https://github.com/Korrawit-aoongern/Basic-App-Docker
+cd Basic-App-Docker
 ```
 2. Build and start containers:
 ```bash
-docker-compose up --build
+docker-compose up --build -d
 ```
 3. Access the app:
-  Frontend: http://localhost:8080
-  Backend: http://localhost:3000
+
+Frontend: http://localhost:80
+
+Backend: http://localhost:3000
 
 ### Stop Containers
 ```bash
