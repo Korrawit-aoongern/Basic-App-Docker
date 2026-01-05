@@ -1,0 +1,19 @@
+stages:
+  - test
+
+robot_tests:
+  stage: test
+  image: python:3.11-slim
+  services:
+    - name: yuzuruorensu/basic-app-docker:v1f
+      alias: frontend
+  variables:
+    BASE_URL: http://localhost:80
+  before_script:
+    - pip install robotframework robotframework-seleniumlibrary
+  script:
+    - robot --outputdir ./tests/results tests
+  artifacts:
+    when: always
+    paths:
+      - ./tests/results
